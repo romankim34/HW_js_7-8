@@ -1,0 +1,102 @@
+blockquote,body,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,td,textarea,th,ul{padding:0;margin:0}table{border-collapse:collapse;border-spacing:0}abbr,acronym,fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-weight:400;font-style:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-weight:400;font-size:100%}q:after,q:before{content:''}
+
+
+
+
+#tabs {
+    max-width: 800px;
+    margin: 20px auto;
+}
+#tabs li {
+    background: #68ff68;
+    display: inline-block;   
+    border-radius: 6px 6px 0 0;
+    border: 2px solid #41bc41;
+}
+#tabs a {
+    display: block;
+    color: #f70a25;
+    text-decoration: none;
+    padding: 20px;
+}
+#tabs #tabs-1 {
+    background: #c9c9c9;
+    position: absolute;
+    max-width: 800px;
+    height: 400px;
+    opacity: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #b4b4b4;
+}
+#tabs #tabs-2 {
+    background: #c9c9c9;
+    position: absolute;
+    max-width: 800px;
+    height: 400px;
+    opacity: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #b4b4b4;
+}
+#tabs #tabs-3 {
+    background: #c9c9c9;
+    position: absolute;
+    max-width: 800px;
+    height: 400px;
+    opacity: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #b4b4b4;
+}
+
+/*---------------------------------------------*/
+
+.wrapper {
+    width: 800px;
+    border: 1px solid black;
+    margin: 430px auto;
+    padding: 20px;
+}
+.wrapper #first-fild {
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+.wrapper #help_text1 {
+    border: 2px solid red;
+    padding: 5px;
+    margin-left: 70px;
+    display: none;
+    width: 250px;
+    border-radius: 3px;
+}
+.wrapper #second-fild {
+    margin-left: 7px;
+    margin-bottom: 10px;
+}
+.wrapper #help_text2 {
+    border: 2px solid red;
+    padding: 5px;
+    margin-left: 70px;
+    display: none;
+    width: 250px;
+    border-radius: 3px;
+}
+.wrapper #third-fild {
+    margin-left: 39px;
+    margin-bottom: 10px;
+}
+.wrapper #help_text3 {
+    border: 2px solid red;
+    padding: 5px;
+    margin-left: 70px;
+    display: none;
+    width: 250px;
+    border-radius: 3px;
+}
+.wrapper #help-button {
+    padding: 5px 50px;
+}
+
+
+
