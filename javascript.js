@@ -1,12 +1,17 @@
 $(function(){
     
+// область присвоения -------------
+    // табы -----------------------
+    
     var $firstTab = $('#first_tab'),
         $secondTab = $('#second_tab'),
         $thirdTab = $('#third_tab'),
         $tab1 = $('#tabs-1'),
         $tab2 = $('#tabs-2'),
         $tab3 = $('#tabs-3'),
-    //------------------------------
+        
+    // формы ---------------------
+        
         $helpText1 = $("#help_text1"),
         $helpText2 = $("#help_text2"),
         $helpText3 = $("#help_text3"),
@@ -14,7 +19,8 @@ $(function(){
         $firstFild = $("#first-fild"),
         $secondFild = $("#second-fild"),
         $thirdFild = $("#third-fild");
-        
+
+// работа табов -----------------------
     
     $firstTab.click(function(){
         $firstTab.css("background", "#aefdae"),
@@ -43,40 +49,69 @@ $(function(){
         $tab3.show();
     });
     
-    //---------------------------------------
+    
+// работа формы -----------------------------------    
+// при наведении курсора --------------------------
+    
+    $firstFild.hover(function(){
+        $helpText1.show(500);
+        $helpText2.hide(500);
+        $helpText3.hide(500);
+    });
+    
+    $secondFild.hover(function(){
+        $helpText1.hide(500);
+        $helpText2.show(500);
+        $helpText3.hide(500);
+    });
+    
+    $thirdFild.hover(function(){
+        $helpText1.hide(500);
+        $helpText2.hide(500);
+        $helpText3.show(500);
+    });
+
+// при выходе курсора ------------------------------
+    
+    $firstFild.mouseleave(function(){
+        $helpText1.hide(500);
+    });
+    
+    $secondFild.mouseleave(function(){
+        $helpText2.hide(500);
+    });
+    
+    $thirdFild.mouseleave(function(){
+        $helpText3.hide(500);
+    });
+    
+// при появлении фокуса -----------------------------
+    
+    $firstFild.focusin(function(){
+        $helpText1.show(500);
+        $helpText2.hide(500);
+        $helpText3.hide(500);
+    });
+    
+    $secondFild.focusin(function(){
+        $helpText1.hide(500);
+        $helpText2.show(500);
+        $helpText3.hide(500);
+    });
+    
+    $thirdFild.focusin(function(){
+        $helpText1.hide(500);
+        $helpText2.hide(500);
+        $helpText3.show(500);
+    });
+    
+// кнопка помощи -----------------------------------
     
     $helpButton.click(function(){
         $helpText1.show(500),
         $helpText2.show(500),
         $helpText3.show(500);
     });
-    
-    
-    
-    
-    $firstFild.hover(function(){
-        $helpText1.fadeToggle(500);
-    });
-    
-    $secondFild.hover(function(){
-        $helpText2.fadeToggle(500);
-    });
-    
-    $thirdFild.hover(function(){
-        $helpText3.fadeToggle(500);
-    });
-
-    
-    
-     $firstFild.mouseout(function(){
-            $helpText1.hide();
-        });
-    $secondFild.mouseout(function(){
-            $helpText2.hide();
-        });
-    $thirdFild.mouseout(function(){
-           $helpText3.hide();
-        });
 
 });
 
